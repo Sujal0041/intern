@@ -3,6 +3,10 @@
 
 <head>
     <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         .container {
             width: 100%;
             height: 741px;
@@ -12,13 +16,12 @@
             background-repeat: no-repeat;
             background-size: cover;
             z-index: 1;
-
         }
 
         #container2 {
             z-index: 2;
             width: 87%;
-            height: 278px;
+            height: 200px;
             background-color: white;
             margin: auto;
             position: relative;
@@ -26,25 +29,20 @@
             border-radius: 15px;
             /* stackoverflow */
             -webkit-box-shadow: 0px 0px 8px grey;
-
         }
 
         .header {
             height: 20%;
-            /* border: 3px solid #000; */
             display: flex;
         }
 
         .header div {
             flex: 1;
-            /* border: 1px solid #000;  */
             box-sizing: border-box;
-            /* Include the border in the div's total width and height */
         }
 
         .footer {
             height: 80%;
-            /* border: 3px solid #000;  */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -53,10 +51,7 @@
         .footer div {
             width: 100%;
             height: 80%;
-            /* Set the height to 80% of the footer's height */
-            /* border: 1px solid #000; */
             box-sizing: border-box;
-            /* Include the border in the div's total width and height */
             justify-content: center;
             display: flex;
             flex-direction: column;
@@ -64,98 +59,79 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 29px;
             line-height: 0%;
-
-
         }
-
         #left {
-
             display: flex;
-            /* justify-content: center;  */
             align-items: center;
             font-size: 25px;
         }
-
         p {
             color: white;
         }
-
-
         h2,
         h4 {
             color: white;
-
         }
-
         .footer h1 {
             color: white;
             font-size: 80px;
             letter-spacing: 11px;
         }
-
         #center {
             display: flex;
             justify-content: center;
         }
-
         button {
-            /* border: none;
-      padding: 0;
-      margin: 0;
-      text-align: left; */
+            border: none;
             margin-left: 20px;
-            ;
             width: 100px;
             height: 40px;
+            border-radius: 7px;
         }
-
         .header div a {
             text-decoration: none;
             color: white;
             padding: 10px;
             margin: 10px 10px;
             font-family: 'Montserrat', sans-serif;
-
         }
-
         #right {
             display: flex;
-            /* justify-content: center;  */
             align-items: center;
             font-size: 25px;
-
         }
-
         #loginUP {
             margin-left: 50%;
         }
-
         #top {
-            border-color: black;
-            border: 2px solid #000;
+            /* border-color: black;
+            border: 2px solid #000; */
             position: relative;
             top: 24px;
+            text-decoration: none;
         }
-
-        
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+        }
         #mid {
-            border-color: black;
-            border: 2px solid #000;
+            /* border-color: black;
+            border: 2px solid #000; */
             position: relative;
             top: 24px;
             margin-top: 30px;
         }
-
-        
         #bot {
-            border-color: black;
-            border: 2px solid #000;
+            /* border-color: black;
+            border: 2px solid #000; */
             position: relative;
             top: 24px;
             margin-top: 30px;
+            display: flex;
+            position: relative;
+            margin-left: 72%;
         }
-
-
         .material-symbols-outlined {
             font-variation-settings:
                 'FILL' 0,
@@ -163,12 +139,29 @@
                 'GRAD' 0,
                 'opsz' 24
         }
+
+        .Stays{
+            margin-left: 50px;
+        }
+        #bcolor {
+            background-color: #8DD3BB;
+            width: 150px;
+            height: 50px;
+        }
+
+        .botbutton {
+            border: none;
+            margin-left: 20px;
+            width: 200px;
+            height: 50px;
+            border-radius: 7px;
+            background-color: white;
+        }
+
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -176,8 +169,11 @@
 <body>
 
     <div class="container">
+
         <div class="header">
+
             <div id="left">
+
                 <a href="#"><span class="material-symbols-outlined">
                         travel
                     </span> Find Flights</a>
@@ -187,43 +183,67 @@
             </div>
 
             <div id="center">
+
                 <img src="logo.png">
+
             </div>
 
             <div id="right">
+
                 <div id="loginUP">
+
                     <Button type="button">Login</Button>
-                    <Button type="button">Register</Button>
+
+                    <Button type="button">Sign Up</Button>
+
                 </div>
+
             </div>
 
         </div>
+
         <div class="footer">
+
             <div>
+
                 <h2>Helping Others</h2>
                 <h1>LIVE & TRAVEL</h1>
                 <h4>Special Offers to suit your plan</h4>
+
             </div>
+
         </div>
+
     </div>
 
     <div id="container2">
 
         <div id="top">
-            <p style="color: black;"> Hi </p>
+
+            <a href="#"><span class="material-symbols-outlined">
+                    travel
+                </span>Flights</a>
+
+            <a href="#" class="Stays"><span class="material-symbols-outlined">
+                    bed
+                </span>Stays</a>
+
         </div>
 
         <div id="mid">
-            <p style="color: black;"> Hi </p>
+
+            <p style="color: black;"> Later </p>
+
         </div>
 
         <div id="bot">
-            <p style="color: black;"> Hi </p>
-        </div>
 
+            <button class="botbutton">+ Add Promo code</button>    
+            <button class="botbuttom" id="bcolor">Show Flights</button>    
+            
+        </div>
 
     </div>
 
 </body>
-
 </html>
