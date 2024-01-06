@@ -201,6 +201,7 @@
             border: 2px solid #ff0000; /* Red border */
             background-color: transparent; /* No background color */
             height: 122px; /* Set height to 50px */
+            display: flex;
         }
 
         #nestedbutton{
@@ -214,6 +215,13 @@
             border-radius: 7px;
             background-color: white;
             border: 1.5px solid #8DD3BB;
+        }
+
+        #img{
+            margin: 3px;
+            height: 117px;
+            width: 117px;
+            border-radius: 10px;
         }
         
 
@@ -314,7 +322,9 @@
     
     <div class="nestedDiv2">
         <div class="innerDiv">
-            <!-- Content inside the first inner div goes here -->
+            <img src="turkey.jpg" id="img"> <p style="color: #000000;">Istanbul, Turkey</p>
+            <br >
+            <p style="color: #000000;"> Flights . Hotels . Resorts</p>
         </div>
         <div class="innerDiv">
             <!-- Content inside the second inner div goes here -->
