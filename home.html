@@ -87,6 +87,7 @@
             width: 100px;
             height: 40px;
             border-radius: 7px;
+            font-size: 16px;
         }
         .header div a {
             text-decoration: none;
@@ -158,6 +159,64 @@
             background-color: white;
         }
 
+        .loginbot{
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+        /* Internal CSS */
+        #container3 {
+            /* background-color: #3498db; */
+            width: 87%;
+            height: 562px;
+            border: 3px solid #000000; /* 3px black border */
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        /* Style for the first nested div */
+        .nestedDiv1 {
+            flex: 2; /* Takes up 1/10 of the parent height */
+            border: 2px solid #000000; /* Black border */
+            background-color: transparent; /* No background color */
+            margin-bottom: 10px;
+        }
+
+        /* Style for the second nested div */
+        .nestedDiv2 {
+            flex: 8; /* Takes up 9/10 of the parent height */
+            border: 2px solid #000000; /* Black border */
+            background-color: transparent; /* No background color */
+            display: flex;
+            flex-wrap: wrap; /* Enable wrapping for the inner divs */
+            gap: 6px; /* Space between inner divs */
+        }
+
+        /* Style for the three equal-width divs inside nestedDiv2 */
+        .innerDiv {
+            flex: 0 0 calc(33.33% - 6px); /* Each div takes up 33.33% width with margin accounted for */
+            box-sizing: border-box; /* Include borders in the width calculation */
+            border: 2px solid #ff0000; /* Red border */
+            background-color: transparent; /* No background color */
+            height: 122px; /* Set height to 50px */
+        }
+
+        #nestedbutton{
+            position: relative;
+            left: 84%;
+            bottom: 33.33%;
+            border: none;
+            margin-left: 20px;
+            width: 200px;
+            height: 50px;
+            border-radius: 7px;
+            background-color: white;
+            border: 1.5px solid #8DD3BB;
+        }
+        
+
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -192,7 +251,7 @@
 
                 <div id="loginUP">
 
-                    <Button type="button">Login</Button>
+                    <Button class="loginbot">Login</Button>
 
                     <Button type="button">Sign Up</Button>
 
@@ -244,6 +303,51 @@
         </div>
 
     </div>
+
+<div id="container3">
+
+    <div class="nestedDiv1">
+        <p style="font-size: 25px; color: black; margin-left: 5px;">Plan your perfect trip</p> 
+        <p style="color: #112211; margin-left: 5px;">Search Flights & Places Hire to our most popular destinations</p>
+        <button id="nestedbutton">See more places</button>
+    </div>
+    
+    <div class="nestedDiv2">
+        <div class="innerDiv">
+            <!-- Content inside the first inner div goes here -->
+        </div>
+        <div class="innerDiv">
+            <!-- Content inside the second inner div goes here -->
+        </div>
+        <div class="innerDiv">
+            <!-- Content inside the third inner div goes here -->
+        </div>
+        <!-- Add more inner divs here -->
+        <div class="innerDiv">
+            <!-- Content inside the fourth inner div goes here -->
+        </div>
+        <div class="innerDiv">
+            <!-- Content inside the fifth inner div goes here -->
+        </div>
+        <div class="innerDiv">
+            <!-- Content inside the fifth inner div goes here -->
+        </div>
+        <div class="innerDiv">
+            <!-- Content inside the sixth inner div goes here -->
+        </div>
+        <!-- Add more inner divs as needed -->
+        <div class="innerDiv">
+            <!-- Content inside the sixth inner div goes here -->
+        </div>
+        <div class="innerDiv">
+            <!-- Content inside the sixth inner div goes here -->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
 
 </body>
 </html>
