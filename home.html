@@ -14,19 +14,19 @@
 
         .header {
             height: 20%;
-            border: 3px solid #000;
+            /* border: 3px solid #000; */
             display: flex;
         }
 
         .header div {
             flex: 1;
-            border: 1px solid #000; 
+            /* border: 1px solid #000;  */
             box-sizing: border-box; /* Include the border in the div's total width and height */
         }
 
         .footer {
             height: 80%;
-            border: 3px solid #000; 
+            /* border: 3px solid #000;  */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -78,20 +78,34 @@
         }
 
     button{
-        border: none;
+        /* border: none;
       padding: 0;
       margin: 0;
-      text-align: left;
+      text-align: left; */
+      margin-left: 20px;;
+      width: 100px;
+      height: 40px;
     }
 
     .header div a {
             text-decoration: none;
             color: white;
             padding: 10px;
-            /* border: 1px solid #000; */
             margin: 10px 10px;
             font-family: 'Montserrat', sans-serif;
             
+        }
+
+        #right{
+            display: flex;
+            /* justify-content: center;  */
+            align-items: center;
+            font-size: 25px;
+            
+        }
+
+        #loginUP{
+            margin-left: 50%;
         }
 
 
@@ -112,7 +126,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-
 <div class="container">
     <div class="header">
         <div id = "left">
@@ -125,13 +138,16 @@
         </div>
 
         <div id="center">
-            <h1>Logo</h1>
+            <img src="logo.png">
+        </div>
+        
+        <div id = "right">
+            <div id="loginUP">
+                <Button type="button">Login</Button>
+                <Button type="button">Register</Button>
+            </div>
         </div>
 
-        <div id = "right">
-            <Button type="button">Login</Button>
-            <Button type="button">Register</Button>
-        </div>
     </div>
     <div class="footer">
         <div>
