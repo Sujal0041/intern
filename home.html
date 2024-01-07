@@ -170,16 +170,17 @@
             /* background-color: #3498db; */
             width: 87%;
             height: 562px;
-            border: 3px solid #000000; /* 3px black border */
+            /* border: 3px solid #000000; */
             display: flex;
             flex-direction: column;
             margin: auto;
+            
         }
 
         /* Style for the first nested div */
         .nestedDiv1 {
             flex: 2; /* Takes up 1/10 of the parent height */
-            border: 2px solid #000000; /* Black border */
+            /* border: 2px solid #000000; */
             background-color: transparent; /* No background color */
             margin-bottom: 10px;
         }
@@ -187,7 +188,7 @@
         /* Style for the second nested div */
         .nestedDiv2 {
             flex: 8; /* Takes up 9/10 of the parent height */
-            border: 2px solid #000000; /* Black border */
+            /* border: 2px solid #000000;  */
             background-color: transparent; /* No background color */
             display: flex;
             flex-wrap: wrap; /* Enable wrapping for the inner divs */
@@ -198,10 +199,13 @@
         .innerDiv {
             flex: 0 0 calc(33.33% - 6px); /* Each div takes up 33.33% width with margin accounted for */
             box-sizing: border-box; /* Include borders in the width calculation */
-            border: 2px solid #ff0000; /* Red border */
+            /* border: 2px solid #ff0000; */
             background-color: transparent; /* No background color */
             height: 122px; /* Set height to 50px */
             display: flex;
+            -webkit-box-shadow: 0px 0px 8px grey;
+            border-radius: 10px;
+            margin: 1px;
         }
 
         #nestedbutton{
@@ -219,9 +223,30 @@
 
         #img{
             margin: 3px;
-            height: 117px;
-            width: 117px;
+            margin-top: 9px;
+            height: 100px;
+            width: 100px;
             border-radius: 10px;
+        }
+
+        #test{
+            position: relative;
+            top: 40px;
+            right: 90px;
+        }
+
+        #leftside{
+            border: 2px solid #000;
+            width: 50%;
+            height: 300px;
+            margin: auto;
+        }
+
+        #rightside{
+            border: 2px solid #000;
+            width: 50%;
+            height: 300px;
+            margin: auto;
         }
         
 
@@ -322,37 +347,63 @@
     
     <div class="nestedDiv2">
         <div class="innerDiv">
-            <img src="turkey.jpg" id="img"> <p style="color: #000000;">Istanbul, Turkey</p>
-            <br >
-            <p style="color: #000000;"> Flights . Hotels . Resorts</p>
+            <img src="turkey.jpg" id="img"> 
+            <p style="color: #000000;">Istanbul, Turkey</p>
+            <p style="color: #000000;" id="test"> Flights • Hotels • Resorts</p>
         </div>
         <div class="innerDiv">
-            <!-- Content inside the second inner div goes here -->
+            <img src="sydney.jpg" id="img">
+            <p style="color: #000000;">Sydney, Australia</p>
+            <p style="color: #000000;" id="test"> Flights • Hotels • Resorts</p>
         </div>
         <div class="innerDiv">
-            <!-- Content inside the third inner div goes here -->
-        </div>
-        <!-- Add more inner divs here -->
-        <div class="innerDiv">
-            <!-- Content inside the fourth inner div goes here -->
+            <img src="baku.jpg" id="img">
+            <p style="color: #000000;">Baku, Azerbaijan</p>
+            <p style="color: #000000;" id="test"> Flights • Hotels • Resorts</p>
         </div>
         <div class="innerDiv">
-            <!-- Content inside the fifth inner div goes here -->
+            <img src="male.jpg" id="img">
+            <p style="color: #000000;">Male, Maldives</p>
+            <p style="color: #000000;" id="test"> Flights • Hotels • Resorts</p>
         </div>
         <div class="innerDiv">
-            <!-- Content inside the fifth inner div goes here -->
+            <img src="paris.jpg" id="img">
+            <p style="color: #000000;">Paris, France</p>
+            <p style="color: #000000;" id="test"> Flights • Hotels • Resorts</p>
         </div>
         <div class="innerDiv">
-            <!-- Content inside the sixth inner div goes here -->
-        </div>
-        <!-- Add more inner divs as needed -->
-        <div class="innerDiv">
-            <!-- Content inside the sixth inner div goes here -->
+            <img src="ny.jpg" id="img">
+            <p style="color: #000000;">New York, US</p>
+            <p style="color: #000000;" id="test"> Flights • Hotels • Resorts</p>
         </div>
         <div class="innerDiv">
-            <!-- Content inside the sixth inner div goes here -->
+            <img src="london.jpg" id="img">
+            <p style="color: #000000;">London, UK</p>
+            <p style="color: #000000;" id="test"> Flights • Hotels • Resorts</p>    
+        </div>
+        <div class="innerDiv">
+            <img src="tokyo.jpg" id="img">
+            <p style="color: #000000;">Tokyo, Japan</p>
+            <p style="color: #000000;" id="test"> Flights • Hotels • Resorts</p>
+        </div>
+        <div class="innerDiv">
+            <img src="Dubai.jpg" id="img">
+            <p style="color: #000000;">Dubai, UAE</p>
+            <p style="color: #000000;" id="test"> Flights • Hotels • Resorts</p>
         </div>
     </div>
+</div>
+
+<div id="container4">
+
+    <div id="leftside">
+
+    </div>
+
+    <div id="rightside">
+
+    </div>
+
 </div>
 
 </body>
