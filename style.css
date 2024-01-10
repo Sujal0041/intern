@@ -390,3 +390,22 @@ height: 250px;
   transform: scale(1.01); 
   cursor: pointer;
 }
+
+
+#footer{
+  background-color: black;
+  height: 400px;
+  z-index: 1;
+  position: relative;
+  /* bottom: 150px; */
+}
+
+#news{
+  background-color: aquamarine;
+  z-index: 2;
+  height: 250px;
+  margin: auto;
+  width: 50%;
+  position: relative;
+  top: 150px;
+}
