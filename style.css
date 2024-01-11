@@ -391,21 +391,30 @@ height: 250px;
   cursor: pointer;
 }
 
-
-#footer{
-  background-color: black;
-  height: 400px;
-  z-index: 1;
+.mainfooter {
   position: relative;
-  /* bottom: 150px; */
+    margin:auto;
+  height: 100px;  
+  display: flex;
+  width: 100%;
 }
 
-#news{
-  background-color: aquamarine;
-  z-index: 2;
-  height: 250px;
-  margin: auto;
-  width: 50%;
-  position: relative;
-  top: 150px;
+
+.gray-box {
+  position: absolute;
+  background: #8DD3BB;
+  height: 300px;
+  width: 100%;
+  top: 100px;
 }
+
+.green-box {
+  position: absolute;
+  background: #cdeae1;
+  width: 70%;
+  left: 270px;
+  height: 190px;
+  
+}
+
+
