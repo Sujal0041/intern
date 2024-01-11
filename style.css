@@ -413,8 +413,47 @@ height: 250px;
   background: #cdeae1;
   width: 70%;
   left: 270px;
-  height: 190px;
+  height: 220px;
+  border-radius: 12px;
+  display: flex;
   
 }
 
+.news{
+  width: 50%;
+  height: 219px;
+}
 
+.form{
+  width: 75%;
+  background-color: white;
+  padding-left: 5px;
+  height: 50px;
+  border-radius: 8px;
+  position: relative;
+  bottom: 33px;
+  left: 5px;
+  border: transparent;
+}
+
+.post{    
+  height: 150px;
+  width: 30%;
+  position: relative;
+  left: 227px;
+  top: 67px;
+  background-image: url('post.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.last{
+  height: 150px;
+  width: 70%;
+  position: relative;
+  top: 140px;
+  left: 270px;
+  background-image: url('footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
