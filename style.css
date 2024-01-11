@@ -329,7 +329,6 @@ transition-duration: 160ms;
 }
 
 #container5{
-/* background-color: #8DD3BB; */
 height: 900px;
 margin-left: 6.5%;
 }
@@ -427,7 +426,7 @@ height: 250px;
 .form{
   width: 75%;
   background-color: white;
-  padding-left: 5px;
+  padding-left: 10px;
   height: 50px;
   border-radius: 8px;
   position: relative;
@@ -437,21 +436,21 @@ height: 250px;
 }
 
 .post{    
-  height: 150px;
-  width: 30%;
+  height: 190px;
+  width: 33%;
   position: relative;
   left: 227px;
-  top: 67px;
+  top: 28px;
   background-image: url('post.png');
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: contain; 
 }
 
 .last{
   height: 150px;
   width: 70%;
   position: relative;
-  top: 140px;
+  top: 137px;
   left: 270px;
   background-image: url('footer.png');
   background-repeat: no-repeat;
